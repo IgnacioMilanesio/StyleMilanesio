@@ -159,7 +159,7 @@ function comprar() {
     let idProducto = Number(prompt("Seleccionar ID de producto:\n" + listar(productosFiltrados)));
     if (productos.some(producto => producto.id === idProducto)) {
         let productoBuscado = productos.find(producto => producto.id === idProducto);
-        
+
         if (productoBuscado.stock === 0) {
             alert("No hay stock disponible");
             return; 
@@ -273,94 +273,3 @@ function finalizarCompra() {
 }
 
 
-
-
-
-
-
-/*
-function comprar() {
-    const categoria = Number(prompt("Seleccione una categoría:\n1 Looks\n2 Fragancias\n3 Accesorios\n4 Ver todos"));
-    let productosFiltrados;
-    switch (categoria) {
-        case 1:
-            productosFiltrados = productos.filter(p => p.categoria === "Looks");
-            break;
-        case 2:
-            productosFiltrados = productos.filter(p => p.categoria === "Fragancias");
-            break;
-        case 3:
-            productosFiltrados = productos.filter(p => p.categoria === "Accesorios");
-            break;
-        case 4:
-            productosFiltrados = productos;
-            break;
-        default:
-            alert("Opción incorrecta");
-            return;
-    }
-    let idProducto = Number(prompt("Seleccionar ID de producto:\n" + listar(productosFiltrados)));
-    if (productos.some(producto => producto.id === idProducto)) {
-        let productoBuscado = productos.find(producto => producto.id === idProducto);
-        let unidades;
-        while (true) {
-            unidades = Number(prompt("Ingrese la cantidad de unidades"));
-            if (unidades === 0) {
-                alert("No puede agregar 0 unidades al carrito. Por favor, ingrese una cantidad válida.");
-            } else if (isNaN(unidades) || unidades < 0) {
-                alert("Cantidad inválida. Por favor, ingrese un número positivo.");
-            } else {
-                break; 
-            }
-        }
-        if (unidades <= productoBuscado.stock) {
-            let indiceProductoEnCarrito = carrito.findIndex(producto => producto.id === idProducto);
-            if (indiceProductoEnCarrito === -1) {
-                carrito.push({
-                    id: productoBuscado.id,
-                    nombre: productoBuscado.nombre,
-                    precioUnitario: productoBuscado.precio,
-                    unidades: unidades,
-                    subtotal: productoBuscado.precio * unidades
-                });
-            } else {
-                carrito[indiceProductoEnCarrito].unidades += unidades;
-                carrito[indiceProductoEnCarrito].subtotal += productoBuscado.precio * unidades;
-            }
-            productoBuscado.stock -= unidades;
-            alert("Producto agregado al carrito.");
-        } else {
-            let respuesta = Number(prompt(`Stock insuficiente. Solo hay ${productoBuscado.stock} unidades disponibles. ¿Qué desea hacer?\n1 Comprar las unidades disponibles\n2 Introducir otra cantidad\n3 Volver al menú principal`));
-            switch (respuesta) {
-                case 1:
-                    let unidadesDisponibles = productoBuscado.stock;
-                    let indiceProductoEnCarrito = carrito.findIndex(producto => producto.id === idProducto);
-                    if (indiceProductoEnCarrito === -1) {
-                        carrito.push({
-                            id: productoBuscado.id,
-                            nombre: productoBuscado.nombre,
-                            precioUnitario: productoBuscado.precio,
-                            unidades: unidadesDisponibles,
-                            subtotal: productoBuscado.precio * unidadesDisponibles
-                        });
-                    } else {
-                        carrito[indiceProductoEnCarrito].unidades += unidadesDisponibles;
-                        carrito[indiceProductoEnCarrito].subtotal += productoBuscado.precio * unidadesDisponibles;
-                    }
-                    productoBuscado.stock -= unidadesDisponibles;
-                    alert("Producto agregado al carrito con la cantidad disponible.");
-                    break;
-                case 2:
-                    continue; 
-                case 3:
-                    return; 
-                default:
-                    alert("Opción incorrecta");
-                    break;
-            }
-        }
-    } else {
-        alert("El ID ingresado no corresponde a un producto de nuestra cartera");
-    }
-}
-*/
