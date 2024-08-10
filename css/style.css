@@ -1,0 +1,838 @@
+
+/* --- RESET PARA ELIMINAR FORMATOS PREDETERMINADOS DE NAVEGADORES --- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ---FIN RESET PARA ELIMINAR FORMATOS PREDETERMINADOS DE NAVEGADORE --- */
+
+/* --- IMPORTAR FUENTE DESDE GOOGLE FONTS --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ---FIN IMPORTAR FUENTE DESDE GOOGLE FONTS --- */
+
+/*** GENERALIDADES ***/
+
+/* --- TITULOS/FORMATOS ESTANDAR:SELECTORES DE ETIQUETAS GENERALES --- */
+
+h1{
+  color: #FFFFFF;
+  text-align:none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2.625rem;
+}
+
+h2{
+  color: #FFFFFF;
+  text-align: none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+h3{
+  color: #FFFFFF;
+  text-align: none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+h4{
+  color: #A81818;
+  text-align: none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+h5{
+  color: #A81818;
+  text-align: none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+h6{
+  color: #FFFFFF;
+  text-align: none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+p{
+color: #FFFFFF;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 1.125rem;
+}
+
+/* ---FIN TITULOS/FORMATOS ESTANDAR:SELECTORES DE ETIQUETAS GENERALES --- */
+
+/* --- PARRAFOS/FORMATOS ESTANDAR: SELECTORES DE ETIQUETAS ESPECIFICAS --- */
+
+header p{
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+main p{
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+footer p{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+/* --- FIN PARRAFOS/FORMATOS ESTANDAR: SELECTORES DE ETIQUETAS ESPECIFICAS --- */
+
+/*** FIN GENERALIDADES ***/
+
+/*<<< HEADER <<< */
+
+header{
+display: flex;
+justify-content: space-between;
+padding: 0rem 1rem 0rem 1rem;
+background-color: #A81818;
+align-items: center;
+position: sticky;
+top: 0;
+}
+header a{
+text-decoration: none;
+}
+.StyleMan-Blog:hover h1{
+color: #ffd700;
+transition: color 0.3s ease;
+}
+
+/* --- BARRA DE NAVEGACION --- */
+
+.navBar{
+display: flex;
+list-style-type: none;
+gap: 1.25rem;
+}
+
+.navBar li a{
+text-decoration: none;
+}
+#filtros button{
+  text-decoration: none;
+  gap: 5.25rem;
+  background-color:#A81818;
+  color:  #FFFFFF;
+  border-color: #A81818;
+  border: #A81818;
+  padding: 0rem 1rem 0rem 1rem;
+  }
+
+#filtros button:hover h2{
+color: #ffd700;
+transition: color 0.3s ease;
+}
+
+.navBar a:hover h2{
+color: #ffd700;
+transition: color 0.3s ease;
+}
+
+.abrir-menu{
+display: none;
+}
+.cerrar-menu{
+display: none;
+}
+
+/* --- FIN BARRA DE NAVEGACION --- */
+
+/*<<< FIN HEADER <<<*/
+
+/* <<< BODY <<< */
+
+body {
+background-color: #161616;
+}
+
+/* <<< FIN BODY << */
+
+
+/*<<< FOOTER <<<*/
+
+footer a{
+text-decoration: none;
+}
+
+footer{
+display: grid;
+padding: .625rem;
+background-color: #A81818;
+bottom: 0;
+width: 100%;
+grid-template-columns: repeat(3, auto);
+grid-template-rows: auto;
+grid-template-areas:
+"Asistencia AcercadeStyleMan Seguinos"
+;
+}
+
+.Asistencia{
+grid-area: Asistencia;
+}
+
+.AcercadeStyleMan{
+grid-area: AcercadeStyleMan;
+}
+.Seguinos{
+grid-area: Seguinos;
+}
+
+footer div{
+display: flex;
+flex-direction:column;
+align-items:center;
+}
+footer a:hover h2{
+color: #ffd700;
+transition: color 0.3s ease;
+}
+footer a:hover p{
+color: #ffd700;
+transition: color 0.3s ease;
+}
+
+/*<<< FIN FOOTER <<<*/
+
+
+
+
+#productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap;
+  padding: 0rem 0rem 2rem 0rem;
+}
+
+.producto {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  margin: 0.5rem;
+  width: 20rem;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.67);
+  border-radius: 2.4375rem;
+  border-right: .375rem solid #FFD700;
+  margin: 2rem;
+  padding: 2rem;
+  
+}
+
+.producto img{
+  border-radius: 2rem;
+  width: 100%;
+  height: 20rem;
+  max-width: 20rem;
+  max-height: 20rem; 
+  border-bottom: .375rem solid #FFD700;
+  object-fit:fill;
+  
+}
+
+#buscar{
+  gap: 5.25rem;
+  background-color:#A81818;
+  color:  #FFFFFF;
+  border-color: #A81818;
+  border: #A81818;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+
+.busqueda button:hover p{
+  color: #ffd700;
+  transition: color 0.3s ease;
+}
+
+#buscador{
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.125rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.67);
+    border: .2rem solid #FFD700;
+    box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    }
+
+.busqueda{
+  display: flex;
+  flex-direction: row;
+}
+
+#todos button{
+  text-decoration: none;
+  gap: 5.25rem;
+  background-color:#A81818;
+  color:  #FFFFFF;
+  border-color: #A81818;
+  border: #A81818;
+  padding: 0rem 0rem 0rem 0rem;
+  text-align: left;
+  }
+
+.productoNoEncontrado{
+  margin-top: 15rem;
+  text-align: center;
+  margin-bottom: 12rem;
+}
+
+
+.agregarAlCarrito{
+
+  text-align: center;
+  background: rgba(0, 0, 0, 0.67);
+  border-bottom: .25rem solid #FFD700;
+  box-shadow: 0px .25rem .25rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  margin: 0.25rem;  
+  color: #FFFFFF;
+  }
+
+.oculto {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+#paginaCarrito {
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    height: 100%;
+    
+    background:#A81818;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: .2rem;
+    align-items: center;
+    /* Oculto por defecto, solo se muestra cuando se activa */
+}
+
+#contenedorCarrito{
+  gap: .1rem;
+  display: flex;
+  justify-content:start;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.67);
+  border-right: .375rem solid #FFD700;
+  box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+  border-radius: 2.4375rem;
+  padding: 1rem;
+  align-items: normal;
+  margin: 5rem;
+  height: auto;
+}
+
+.floating-box{
+  position: fixed;
+  bottom: 1rem;
+  right: 1.5rem;
+  background: #FFD700;
+  border: .25rem solid #FFD700;
+  box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer; 
+}
+
+
+#finalizarCompra, #seguirComprando {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color:#FFD700;
+  color: #161616;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#finalizarCompra:hover, #seguirComprando:hover {
+  background-color: #FFD700;
+  color:#A81818;
+}
+
+.tarjetaCarrito {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.seguirFinalizar{
+  display: flex;
+  flex-direction:row; 
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.total-Carrito{
+  text-align: center;
+  
+}
+
+
+.mensaje-compra{
+  text-align: center;
+  margin-top: 20rem;
+  margin-bottom: 15rem;
+}
+
+.fianalCompra{
+  display: flex;
+  flex-direction:row; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* *** PAGINA EXPERIENCIAS *** */
+
+/* --- Formatos generales --- */
+.experiencias{
+
+gap: 6rem;
+margin: 4rem;
+
+}
+
+.experiencias h4 {
+text-align: center;
+background: rgba(0, 0, 0, 0.67);
+border-bottom: .25rem solid #FFD700;
+box-shadow: 0px .25rem .25rem rgba(0, 0, 0, 0.25);
+border-radius: 1.875rem;
+box-sizing: border-box;
+}
+
+.experiencias h5{
+text-align: center;
+margin-top: 1rem ;
+margin-bottom: 0.5rem;
+}
+.experiencias h6{
+margin-left: 1.5rem;
+}
+
+.experiencias p{
+text-align:justify;
+margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.info{
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: left;
+}
+
+/* --- Fin Formatos generales --- */
+
+/* --- Formulario --- */
+
+form{
+box-sizing: border-box;
+background: rgba(0, 0, 0, 0.67);
+border: .25rem solid #FFD700;
+box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+border-radius: 1.875rem;
+margin-top: 0.5rem ;
+margin-bottom: 1.5rem;
+width: 100%;
+}
+
+.conteinerForm{
+margin: 1rem;
+align-items: center;
+
+}
+
+form h6{
+text-align: center;
+margin-top: 0.5rem ;
+margin-bottom: 0.5rem;
+}
+.name{
+color: #FFFFFF;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 1.125rem;
+box-sizing: border-box;
+/* Color|Viñeta */
+background: rgba(0, 0, 0, 0.67);
+/* Stroke|D */
+border: .25rem solid #FFD700;
+box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+border-radius: 1.875rem;
+width: 60%;
+height: 2.2rem;
+}
+.phone{
+color: #FFFFFF;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 1.125rem;
+box-sizing: border-box;
+/* Color|Viñeta */
+background: rgba(0, 0, 0, 0.67);
+/* Stroke|D */
+border: .25rem solid #FFD700;
+box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+border-radius: 1.875rem;
+width: 38%;
+height: 2.2rem;
+}
+
+.email{
+color: #FFFFFF;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 1.125rem;
+box-sizing: border-box;
+/* Color|Viñeta */
+background: rgba(0, 0, 0, 0.67);
+/* Stroke|D */
+border: .25rem solid #FFD700;
+box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+border-radius: 1.875rem;
+width: 99%;
+height: 2.2rem;
+margin-top: 0.5rem ;
+margin-bottom: 0.5rem;
+}
+
+.mensaje{
+color: #FFFFFF;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size: 1.125rem;
+box-sizing: border-box;
+/* Color|Viñeta */
+background: rgba(0, 0, 0, 0.67);
+/* Stroke|D */
+border: .25rem solid #FFD700;
+box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+border-radius: 1.875rem;
+width: 99%;
+height: 7rem;
+margin-bottom: 0.5rem;
+}
+
+.send{
+box-sizing: border-box;
+/* Color 3 */
+background: #FFD700;
+/* Stroke|D */
+border: .25rem solid #FFD700;
+box-shadow: 0rem .25rem .25rem rgba(0, 0, 0, 0.25);
+border-radius: 1.875rem;
+width: 20%;
+margin-left: 40%;
+color: #A81818;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 1.5rem;
+}
+
+/* --- Fin Formulario --- */
+
+/* --- Mapa/ubicacion --- */
+.ir-a-ubicacion{
+width: 100%;
+height: 100%;
+}
+
+.mapa{
+border-radius: 2.5rem;
+margin-right: 10%;
+margin-left: 10%;
+aspect-ratio: 1/1;
+width: 80%;
+height: auto;
+
+}
+
+/* --- Fin Mapa/ubicacion --- */
+
+
+
+
+/* /// RESPONSIVE DIMENSIONS 1024px /// */
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+/*+++ NAV +++ */
+
+.abrir-menu,
+.cerrar-menu{
+display: block;
+border: 0;
+cursor: pointer;
+font-size: 1.5rem;
+background-color: transparent;
+color:#FFFFFF;
+}
+
+.nav{
+opacity: 0;
+visibility: hidden;
+} 
+.nav{
+display: flex;
+flex-direction: column;
+position: absolute;
+align-items: end;
+gap: 1rem;
+top: 0;
+right: 0;
+height: 100vh;
+background-color: #A81818;
+padding: 1rem;
+}
+.navBar{
+flex-direction: column;
+align-items: end;
+}
+.nav.visible{
+opacity: 1;
+visibility: visible;
+}
+#filtros button{
+  display: flex;
+  text-align: left;
+  align-items: end;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+
+.experiencias{
+gap: 0rem;
+margin: .1rem;
+
+}
+
+.mapa{
+width: 70%;
+aspect-ratio: 4/3;
+}
+.mapa-container{
+text-align: center;
+}
+
+.send{
+width: 30%;
+margin-left: 35%;
+}
+
+
+
+
+
+}
+
+/* /// RESPONSIVE DIMENSIONS 730px /// */
+
+
+
+
+
+@media (max-width: 730px){
+
+
+
+
+
+
+footer{
+gap: 1rem;
+grid-template-columns: repeat(2, auto);
+grid-template-rows: repeat(2, auto);
+grid-template-areas:
+"AcercadeStyleMan Seguinos"
+"Asistencia Seguinos"
+
+;
+
+}
+
+
+
+
+
+
+
+}
+
+/* /// RESPONSIVE DIMENSIONS 650px /// */
+
+
+
+
+
+@media (max-width: 650px){
+
+
+h1{
+    font-size: 1.5rem;
+  }
+
+h2{
+    font-size: 1.25rem;
+  }
+
+h3{
+    font-size: 1.125rem;
+  }
+
+h4{
+    font-size: 1.125rem;
+  }
+
+h5{
+    font-size: 1rem;
+  }
+
+h6{
+    font-size: 1rem;
+  }
+p{
+    font-size: .75rem;
+
+  }
+header p{
+  font-size: .75rem;
+}
+main p{
+  font-size: .75rem;
+}
+footer p{
+  font-size: .75rem;
+}
+
+
+
+
+
+
+
+
+}
+
+/* /// RESPONSIVE DIMENSIONS 500px /// */
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+
+
+
+
+
+
+/*+++ FOOTER +++ */
+
+footer{
+gap: 1rem;
+grid-template-columns: 1FR;
+grid-template-rows: repeat(3, auto);
+grid-template-areas:
+"AcercadeStyleMan"
+"Asistencia"
+"Seguinos"
+;
+
+}
+
+footer div{
+display: flex;
+flex-direction:column;
+align-items: start;
+}
+
+.icon{
+display: flex;
+flex-direction: row;
+}
+
+/*+++ FIN FOOTER +++ */
+
+}
+
